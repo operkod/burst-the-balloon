@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circles</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="main__title">Лопни воздушный шар!</h1>
+      <div class="main__game game">
+        <div class="game__canvas-wrapper">
+          <canvas class="game__canvas js-canvas"></canvas>
+          <div class="modal js-modal-start">
+            <p class="modal__description">
+              Использование СТРЕЛКИ ВЛЕВО и СТРЕЛКИ ВПРАВО для управления иглой в верхней части
+              экрана. Лопните как можно больше воздушных шаров за одну минуту.
+            </p>
+            <button class="modal__button js-button-start" type="button">Начать игру!</button>
+          </div>
+          <div class="modal js-modal-end">
+            <p class="modal__description">
+              Ваши результаты: <br />
+              Лопнутые шары: <span class="js-hints">0</span><br />
+              Пропущеные шары: <span class="js-skipped">0</span><br />
+            </p>
+            <button class="modal__button js-button-replay" type="button">Try again!</button>
+          </div>
+        </div>
+        <div class="game__panel">
+          <ul class="panel">
+            <li class="panel__item">ВРЕМЯ: <span class="js-timer">00:00</span></li>
+            <li class="panel__item">Лопнутые шары: <span class="js-hints">0</span></li>
+            <li class="panel__item">Пропущеные шары: <span class="js-skipped">0</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="app/index.js"></script>
+  </body>
+</html>
